@@ -52,9 +52,9 @@ input {
 .grid {
     display: grid;
     grid-template-areas: 
-    "my-header my-header"
-    "my-aside my-main"
-    "my-aside my-main";
+    "my-header my-header my-header"
+    "my-aside my-main my-main"
+    "my-aside my-main my-main";
     grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
     gap: 8rem 0;
 }
@@ -70,6 +70,8 @@ input {
 }
 .header__logo {
     font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 7.5rem;
     margin-right: 7rem;
 }
 .header__nav {
@@ -77,6 +79,8 @@ input {
 }
 .header__nav a {
     font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 117%; 
 }
 .header__nav a:not(:last-child){
     margin-right: 2rem;
@@ -100,6 +104,8 @@ input {
     padding-right: 4rem;
     font-size: 2rem;
     color: #fff;    
+    font-size: 20px;
+    line-height: 115%;
 }
 .header__find input::placeholder {
     font-size: 2rem;
@@ -111,15 +117,29 @@ input {
 }
 .header__hour {
     font-size: 2rem;
+    line-height: 115%;
 }
 .header__days {
     font-size: 1.2rem;
+    line-height: 117%;
 }
 .header__persponal {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
 }
+
+.main-display__trailer {
+    width: 98.5%;
+    height: 20.2rem;
+    background: rgba(0, 0, 0, 0.4) url('../img/image-main/spider-man_no_way_to_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.6rem;
+}
+
+
 /* сетка */
 @media (max-width: 108em) {
     html {
